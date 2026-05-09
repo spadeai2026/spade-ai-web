@@ -69,21 +69,6 @@ export default function About() {
                 increasing productivity, and strengthening rural socio-economic resilience in Bangladesh.
               </p>
             </div>
-            {/* <div>
-              <h3 className="text-xs font-sans font-semibold uppercase tracking-wider text-earth-900 mb-3 pb-2 border-b border-earth-200">
-                Motivation
-              </h3>
-              <p className="text-sm font-sans text-earth-800 leading-loose">
-                Bangladesh's agriculture supports millions of livelihoods, but farmers often rely on
-                traditional practices instead of scientific guidance, leading to low yields and poor soil
-                management. Existing soil testing methods are costly, time-consuming, and inaccessible to
-                smallholder farmers, while current monitoring tools are expensive and non-portable.
-                However, the widespread use of smartphones offers a chance to make agricultural insights
-                more accessible. This motivates SPADE-AI, an AI-based system that uses smartphone RGB
-                images and spectral reconstruction to estimate soil properties, enabling instant,
-                data-driven crop recommendations and improving productivity and rural resilience.
-              </p>
-            </div> */}
           </div>
 
         </div>

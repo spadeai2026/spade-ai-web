@@ -60,7 +60,7 @@ export default function Team() {
         </div>
 
         <div className="border-t border-earth-200 pt-8 flex items-center gap-5 flex-wrap">
-          <img src="/logos/just.png" alt="Jashore University of Science and Technology" className="h-12 object-contain opacity-90" />
+          <img src="/logos/just.png" alt="Jashore University of Science and Technology" className="h-20  object-contain opacity-90" />
           <div>
             <p className="text-sm font-sans font-semibold text-earth-900">Jashore University of Science and Technology</p>
             <p className="text-xs font-sans text-earth-500 mt-0.5">Jashore, Bangladesh</p>

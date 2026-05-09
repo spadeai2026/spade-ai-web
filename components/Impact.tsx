@@ -47,7 +47,7 @@ export default function Impact() {
 
           {/* ICSETEP */}
           <div>
-            <img src="/logos/icsetep.png" alt="ICSETEP Logo" className="h-16 object-contain mb-5 opacity-90" />
+            <img src="/logos/icsetep.png" alt="ICSETEP Logo" className="h-20 object-contain mb-5 opacity-90" />
             <h3 className="text-sm font-sans font-semibold text-earth-900 uppercase tracking-wider mb-2 pb-2 border-b border-earth-200">
               ICSETEP Alignment
             </h3>
@@ -66,7 +66,7 @@ export default function Impact() {
 
           {/* National Policy */}
           <div>
-            <img src="/logos/bd.png" alt="National Policy Logo" className="h-16 object-contain mb-5 opacity-90" />
+            <img src="/logos/bd.png" alt="National Policy Logo" className="h-20 object-contain mb-5 opacity-90" />
             <h3 className="text-sm font-sans font-semibold text-earth-900 uppercase tracking-wider mb-2 pb-2 border-b border-earth-200">
               National Policy Alignment
             </h3>
