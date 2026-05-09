@@ -48,9 +48,9 @@ export default function Hero() {
             ))}
           </div>
           <div className="flex items-center gap-5 opacity-70">
-            <img src="/logos/adb.png"     alt="Asian Development Bank" className="h-16 object-contain" />
-            <img src="/logos/ugc.png"     alt="UGC Bangladesh"         className="h-16 object-contain" />
-            <img src="/logos/icsetep.png" alt="ICSETEP"                className="h-16 object-contain" />
+            <img src="/logos/adb.png"     alt="Asian Development Bank" className="h-20 object-contain" />
+            <img src="/logos/ugc.png"     alt="UGC Bangladesh"         className="h-20 object-contain" />
+            <img src="/logos/icsetep.png" alt="ICSETEP"                className="h-20 object-contain" />
           </div>
         </div>
 

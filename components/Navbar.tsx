@@ -16,17 +16,17 @@ export default function Navbar() {
   const [hovered, setHovered] = useState<string | null>(null);
 
   return (
-    <nav className="sticky top-0 z-50 bg-earth-50 border-b border-earth-200">
+    <nav className="sticky top-0 z-50 bg-earth-900 border-b border-earth-700">
       <div className="max-w-4xl mx-auto px-6">
         <div className="flex items-center justify-between h-14">
 
           {/* Wordmark */}
           <Link href="/" className="flex items-center gap-3 no-underline">
-            <span className="text-xs font-sans font-medium uppercase tracking-brand text-earth-500">
+            <span className="text-xs font-sans font-medium uppercase tracking-brand text-earth-400">
               Research Initiative
             </span>
-            <span className="text-earth-300 text-sm">·</span>
-            <span className="text-brand font-serif font-semibold text-earth-900 tracking-snug">
+            <span className="text-earth-600 text-sm">·</span>
+            <span className="text-brand font-serif font-semibold text-white tracking-snug">
               SPADE-AI
             </span>
           </Link>
@@ -38,13 +38,13 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className="relative inline-block px-3 py-1 text-nav font-sans no-underline transition-colors duration-150"
-                style={{ color: hovered === link.name ? '#2d2720' : '#5c5248' }}
+                style={{ color: hovered === link.name ? '#ffffff' : '#9ca3af' }}
                 onMouseEnter={() => setHovered(link.name)}
                 onMouseLeave={() => setHovered(null)}
               >
                 {link.name}
                 <span
-                  className="absolute bottom-0 left-3 right-3 h-px bg-earth-500 transition-transform duration-200 origin-left"
+                  className="absolute bottom-0 left-3 right-3 h-px bg-white transition-transform duration-200 origin-left"
                   style={{ transform: hovered === link.name ? 'scaleX(1)' : 'scaleX(0)' }}
                 />
               </Link>
@@ -54,7 +54,7 @@ export default function Navbar() {
           {/* Hamburger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-1.5 text-earth-600 bg-transparent border-none cursor-pointer"
+            className="md:hidden p-1.5 text-earth-400 bg-transparent border-none cursor-pointer"
             aria-label="Toggle menu"
           >
             <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,15 +70,15 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden border-t border-earth-200 bg-earth-50">
+        <div className="md:hidden border-t border-earth-700 bg-earth-800">
           <div className="max-w-4xl mx-auto px-6 py-3 flex flex-col">
             {navLinks.map((link, i) => (
               <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`text-nav font-sans text-earth-700 no-underline py-2.5 ${
-                  i < navLinks.length - 1 ? "border-b border-earth-100" : ""
+                className={`text-nav font-sans text-earth-300 no-underline py-2.5 ${
+                  i < navLinks.length - 1 ? "border-b border-earth-700" : ""
                 }`}
               >
                 {link.name}
