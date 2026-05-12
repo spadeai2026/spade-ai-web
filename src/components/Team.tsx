@@ -43,7 +43,7 @@ export default function Team() {
         </p>
 
         <div className="flex flex-col mb-14">
-          {TEAM_ASSISTANTS.map((ra, i, arr) => (
+          {TEAM_ASSISTANTS.map((ra: { name: string; email: string }, i: number, arr: Array<{ name: string; email: string }>) => (
             <div key={i} className={`flex items-baseline justify-between flex-wrap gap-2 py-4 ${i < arr.length - 1 ? "border-b border-earth-100" : ""}`}>
               <span className="text-base font-semibold text-earth-900 tracking-title">{ra.name}</span>
               <a href={`mailto:${ra.email}`} className="text-fine font-sans text-earth-600 border-b border-earth-300 pb-px no-underline">

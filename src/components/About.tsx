@@ -35,7 +35,7 @@ export default function About() {
                 { term: "Target",  def: "Smallholder Farmers in Bangladesh"         },
                 { term: "Output",  def: "Bengali-language Mobile Application"       },
                 { term: "Zones",   def: "~10 Agro-ecological Zones (AEZs)"         },
-              ].map((item, i, arr) => (
+              ].map((item: { term: string; def: string }, i: number, arr: Array<{ term: string; def: string }>) => (
                 <div
                   key={i}
                   className={`flex gap-4 py-2.5 ${i < arr.length - 1 ? "border-b border-earth-100" : ""}`}

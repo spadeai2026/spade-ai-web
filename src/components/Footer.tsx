@@ -36,7 +36,7 @@ export default function Footer() {
               Quick Links
             </p>
             <div className="flex flex-col gap-0">
-              {FOOTER_LINKS.map((link, i, arr) => (
+              {FOOTER_LINKS.map((link: { label: string; href: string }, i: number, arr: Array<{ label: string; href: string }>) => (
                 <a
                   key={i}
                   href={link.href}
@@ -56,7 +56,7 @@ export default function Footer() {
               Contact
             </p>
             <div className="flex flex-col gap-0">
-              {FOOTER_CONTACTS.map((item, i, arr) => (
+              {FOOTER_CONTACTS.map((item: { label: string; email: string }, i: number, arr: Array<{ label: string; email: string }>) => (
                 <div
                   key={i}
                   className={`flex items-baseline gap-3 py-2.5 ${
@@ -85,7 +85,7 @@ export default function Footer() {
             Funded & Supported By
           </p>
           <div className="flex flex-wrap items-center justify-center gap-10">
-            {FOOTER_LOGOS.map((logo, i) => (
+            {FOOTER_LOGOS.map((logo: { src: string; alt: string }, i: number) => (
               <div
                 key={i}
                 className="bg-white rounded px-4 py-2 flex items-center justify-center"

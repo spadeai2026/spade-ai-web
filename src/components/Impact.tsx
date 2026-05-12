@@ -30,7 +30,7 @@ export default function Impact() {
               SPADE-AI supports multiple ICSETEP objectives across research, education, and socio-economic impact.
             </p>
             <div className="flex flex-col">
-              {ICSETEP_OBJECTIVES.map((item, i, arr) => (
+              {ICSETEP_OBJECTIVES.map((item: { label: string }, i: number, arr: Array<{ label: string }>) => (
                 <div key={i} className={`flex items-baseline gap-3 py-2.5 ${i < arr.length - 1 ? "border-b border-earth-100" : ""}`}>
                   <span className="w-1 h-1 rounded-full bg-earth-400 flex-shrink-0 mt-2" />
                   <span className="text-xs font-sans text-earth-800 leading-snug">{item.label}</span>
@@ -49,7 +49,7 @@ export default function Impact() {
               The project is aligned with Bangladesh's key national frameworks for digital agriculture and food security.
             </p>
             <div className="flex flex-col">
-              {NATIONAL_POLICIES.map((item, i, arr) => (
+              {NATIONAL_POLICIES.map((item: { label: string }, i: number, arr: Array<{ label: string }>) => (
                 <div key={i} className={`flex items-baseline gap-3 py-2.5 ${i < arr.length - 1 ? "border-b border-earth-100" : ""}`}>
                   <span className="w-1 h-1 rounded-full bg-earth-400 flex-shrink-0 mt-2" />
                   <span className="text-xs font-sans text-earth-800 leading-snug">{item.label}</span>
@@ -74,7 +74,7 @@ export default function Impact() {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-5 border border-earth-200">
-          {SDG_GOALS.map((sdg, i, arr) => (
+          {SDG_GOALS.map((sdg: { logo: string; title: string; description: string }, i: number, arr: Array<{ logo: string; title: string; description: string }>) => (
             <div
               key={i}
               className={`p-5 flex flex-col gap-3 ${i < arr.length - 1 ? "border-b sm:border-b-0 sm:border-r border-earth-200" : ""}`}
