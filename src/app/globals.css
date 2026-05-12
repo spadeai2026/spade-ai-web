@@ -52,7 +52,7 @@
   }
 
   .section-bg {
-    @apply bg-earth-50 py-0 md:py-24 font-serif;
+    @apply bg-earth-50 py-16 font-serif;
   }
 
   .section-spacing {
