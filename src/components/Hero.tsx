@@ -1,21 +1,21 @@
 export default function Hero() {
   return (
-    <section id="home" className="bg-earth-50 border-b border-earth-200 font-serif pt-20 pb-24">
-      <div className="max-w-4xl mx-auto px-6">
+    <section id="home" className="section-bg border-b border-earth-200">
+      <div className="section-container">
 
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-6">
-          <span className="text-xs font-sans font-medium uppercase tracking-widest text-earth-500">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 section-spacing">
+          <span className="section-label">
             Jashore University of Science and Technology
           </span>
         </div>
 
         <div className="border-t border-earth-200 mb-10" />
 
-        <p className="text-xs font-sans font-medium uppercase tracking-widest text-earth-400 mb-4">
+        <p className="section-label section-spacing">
           Research Project — 2026–2027
         </p>
 
-        <h1 className="text-display font-semibold text-earth-900 tracking-display max-w-[720px] mb-6">
+        <h1 className="text-earth-900 tracking-display max-w-[720px] mb-6">
           Deep Learning Based Soil Property Estimation
         </h1>
 

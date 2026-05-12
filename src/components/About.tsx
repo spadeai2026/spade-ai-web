@@ -1,16 +1,12 @@
 export default function About() {
   return (
-    <section
-      id="about"
-      className="bg-earth-50"
-      style={{ padding: "80px 0 96px", fontFamily: "Georgia, serif" }}
-    >
-      <div className="max-w-4xl mx-auto px-6">
+    <section id="about" className="section-bg">
+      <div className="section-container">
 
-        <p className="text-xs tracking-widest uppercase text-earth-500 font-sans font-medium mb-2">
+        <p className="section-label section-spacing">
           The Project
         </p>
-        <h2 className="text-3xl font-semibold text-earth-900 mb-12" style={{ letterSpacing: "-0.02em" }}>
+        <h2 className="section-spacing mb-12">
           About SPADE-AI
         </h2>
 
@@ -24,7 +20,7 @@ export default function About() {
               <p className="text-xs font-sans font-medium uppercase tracking-widest text-earth-500 mb-1">
                 Core Insight
               </p>
-              <p className="text-xl font-semibold text-earth-900 leading-snug" style={{ letterSpacing: "-0.01em" }}>
+              <p className="text-xl font-semibold text-earth-900 leading-snug tracking-title">
                 Soil Science Meets AI
               </p>
               <p className="text-sm font-sans text-earth-600 mt-1 leading-relaxed">

@@ -1,139 +1,36 @@
-# SPADE-AI Website
-
-A website for the SPADE-AI research project
-
-## Tech Stack
-
-- **Framework**: Next.js 14 (Static Export)
-- **Styling**: Tailwind CSS 3
-- **Language**: TypeScript
-- **Deployment**: Vercel, Neon
-
-
-## Project Structure
-
-```
-├── app/
-│   ├── layout.tsx
-│   ├── page.tsx
-│   └── globals.css
-├── components/
-│   ├── Navbar.tsx
-│   ├── Footer.tsx
-│   ├── Hero.tsx
-│   ├── About.tsx
-│   ├── Impact.tsx
-│   └── Team.tsx
-├── public/
-├── package.json
-├── next.config.js
-├── tailwind.config.js
-├── tsconfig.json
-└── postcss.config.js
-```
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js 18+ or higher
-- npm, yarn, or pnpm package manager
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   cd /Spade-AI
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   # or
-   pnpm install
-   ```
-
-3. **Run development server**
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser
-
-4. **Build for production**
-   ```bash
-   npm run build
-   npm start
-   ```
-
-5. **Export static site**
-   ```bash
-   npm run export
-   ```
-   Output will be in `out/` directory
-
-## Responsive Design
-
-The website is fully responsive with breakpoints:
-- Mobile: < 640px
-- Tablet: 640px - 1024px
-- Desktop: > 1024px
-
-## Deployment
-
-### Vercel
-
-1. Push code to GitHub
-2. Connect repository to Vercel
-3. Deploy automatically on push
+First, run the development server:
 
 ```bash
-npm install -g vercel
-vercel
-```
-
-## Available Scripts
-
-```bash
-# Development
 npm run dev
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
-
-# Export as static site
-npm run export
-
-# Run linter
-npm run lint
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Troubleshooting
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Port 3000 already in use
-```bash
-npm run dev -- -p 3001
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Build errors
-```bash
-rm -rf .next node_modules
-npm install
-npm run build
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### Styling issues
-```bash
-npm run build
-# Clear browser cache
-```
+## Learn More
 
-## Links
+To learn more about Next.js, take a look at the following resources:
 
-- Project Website: [SPADE-AI](/)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
----
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

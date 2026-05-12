@@ -1,12 +1,12 @@
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { FOOTER_CONTACTS, FOOTER_LINKS, FOOTER_LOGOS } = require('@/constants');
 
   return (
     <footer
-      className="bg-earth-900 border-t border-earth-700"
-      style={{ fontFamily: "Georgia, serif" }}
+      className="bg-earth-900 border-t border-earth-700 font-serif"
     >
-      <div className="max-w-4xl mx-auto px-6 py-16">
+      <div className="section-container py-16">
 
         {/* Top grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
@@ -17,8 +17,7 @@ export default function Footer() {
               Project
             </p>
             <h3
-              className="text-lg font-semibold text-white mb-3"
-              style={{ letterSpacing: "-0.01em" }}
+              className="text-lg font-semibold text-white mb-3 tracking-title"
             >
               SPADE-AI
             </h3>
@@ -37,18 +36,13 @@ export default function Footer() {
               Quick Links
             </p>
             <div className="flex flex-col gap-0">
-              {[
-                { label: "About",  href: "#about"  },
-                { label: "Impact", href: "#impact" },
-                { label: "Team",   href: "#team"   },
-              ].map((link, i, arr) => (
+              {FOOTER_LINKS.map((link, i, arr) => (
                 <a
                   key={i}
                   href={link.href}
-                  className={`text-sm font-sans text-earth-400 hover:text-white transition-colors py-2.5 ${
+                  className={`text-sm font-sans text-earth-400 hover:text-white transition-colors py-2.5 no-underline ${
                     i < arr.length - 1 ? "border-b border-earth-800" : ""
                   }`}
-                  style={{ textDecoration: "none" }}
                 >
                   {link.label}
                 </a>
@@ -62,10 +56,7 @@ export default function Footer() {
               Contact
             </p>
             <div className="flex flex-col gap-0">
-              {[
-                { label: "PI",    email: "pi.spade.ai@gmail.com"   },
-                { label: "Co-PI", email: "copi.spade.ai@gmail.com" },
-              ].map((item, i, arr) => (
+              {FOOTER_CONTACTS.map((item, i, arr) => (
                 <div
                   key={i}
                   className={`flex items-baseline gap-3 py-2.5 ${
@@ -77,8 +68,7 @@ export default function Footer() {
                   </span>
                   <a
                     href={`mailto:${item.email}`}
-                    className="text-sm font-sans text-earth-400 hover:text-white transition-colors border-b border-earth-700 pb-px"
-                    style={{ textDecoration: "none", fontSize: "13px" }}
+                    className="text-sm font-sans text-earth-400 hover:text-white transition-colors border-b border-earth-700 pb-px no-underline"
                   >
                     {item.email}
                   </a>
@@ -90,16 +80,12 @@ export default function Footer() {
         </div>
 
         {/* Funded By */}
-        <div className="border-t border-earth-800 pt-10 mb-10">
+        <div className="border-t border-earth-800 pt-10 mb-12">
           <p className="text-xs font-sans font-medium uppercase tracking-widest text-earth-500 mb-8 text-center">
             Funded & Supported By
           </p>
           <div className="flex flex-wrap items-center justify-center gap-10">
-            {[
-              { src: "/logos/adb.png",     alt: "Asian Development Bank"                },
-              { src: "/logos/ugc.png",     alt: "University Grants Commission Bangladesh" },
-              { src: "/logos/icsetep.png", alt: "ICSETEP"                               },
-            ].map((logo, i) => (
+            {FOOTER_LOGOS.map((logo, i) => (
               <div
                 key={i}
                 className="bg-white rounded px-4 py-2 flex items-center justify-center"
